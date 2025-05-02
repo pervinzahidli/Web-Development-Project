@@ -1,0 +1,253 @@
+:root {
+    --primary-color: #001f53;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-container h1 {
+    font-size: 64px; /* və ya istədiyin ölçü: 48px, 72px, 5rem və s. */
+    font-weight: bold; /* daha qalın etmək istəsən */
+    color: white; /* arxa fon tündsə, görünməsi üçün */
+}
+
+header {
+    background: url('Photo/—Pngtree—blue business technology information security_1100472.jpg') center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 20px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: -25px;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #003580;
+    border-radius: 6px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+aside {
+    flex: 1 1 250px;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #999;
+    padding-bottom: 5px;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+aside ul li {
+    padding: 6px 0;
+}
+
+main {
+    flex: 3 1 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+
+.header-container {
+    position: relative;
+    text-align: center; /* Cyber Security ortada qalsın deyə */
+    padding: 40px;
+}
+
+.headpost {
+    position: absolute;
+    right: 50px; /* sağdan məsafə */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+
+
+
+
+
+.post {
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.post:hover {
+    transform: translateY(-3px);
+}
+
+.post h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.post p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.post span {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.contact-section {
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #003580;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+}
+
+#about.contact-section {
+    display: none;
+    grid-column: 1 / -1;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    main, aside {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+    
+    header {
+        padding: 40px 20px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav a {
+        margin: 0 5px;
+        padding: 5px 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .post {
+        padding: 12px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
