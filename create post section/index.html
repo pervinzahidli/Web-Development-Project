@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blog Writing Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Blog Writing Panel</div>
+  </header>
+
+  <div class="container">
+    <!-- Left sidebar: meta info -->
+    <aside class="form-sidebar">
+      <h2>Meta Information</h2>
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author" required>
+
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <button id="publishBtn">Publish</button>
+    </aside>
+
+    <!-- Right panel: content input + published posts -->
+    <div class="right-panel">
+      <main class="form-main">
+        <h2>Content</h2>
+        <textarea id="content" name="content" rows="20" placeholder="Write your content here..." required></textarea>
+      </main>
+
+      <section class="blog-list" id="blogList">
+        <h2>Published Posts</h2>
+        <!-- Posts will be appended here -->
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
