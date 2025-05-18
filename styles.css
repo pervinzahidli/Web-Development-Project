@@ -51,23 +51,27 @@ header {
 .headpost {
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: -20px;
     transform: translateY(-50%);
-    background-color: var(--white);
-    padding: 12px;
-    border-radius: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 31, 83, 0.8); /* Semi-transparent dark blue */
+    padding: 6px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2),
+                inset 0 1px 1px rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
+
 
 .headpost h3 a,
 .admin-btn {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 8px 15px;
-    border-radius: 20px;
+    padding: 14px 25px;
+    border-radius: 25px;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
