@@ -1,0 +1,22 @@
+{
+  "title": "QuickPay Faces Backlash Over Unauthorized Data Sharing",
+  "author": "Michael Brown",
+  "date": "May 16, 2025",
+  "content": {
+    "intro": "Payment app QuickPay has agreed to a $4.75 million settlement after selling user transaction data to third-party advertisers without consent.",
+    "sections": [
+      {
+        "title": "What Did QuickPay Do Wrong?",
+        "content": "An investigation revealed that QuickPay shared users' spending habits, locations, and contact details with marketing firms, violating privacy laws."
+      },
+      {
+        "title": "Who Can Claim Compensation?",
+        "content": "All U.S. users who had an active account between **2020-2024** are eligible for a $50-$200 payment, depending on usage."
+      },
+      {
+        "title": "Future Privacy Changes",
+        "content": "QuickPay must now obtain explicit user consent before sharing data and allow opt-out options for data tracking."
+      }
+    ]
+  }
+}

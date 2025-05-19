@@ -1,0 +1,22 @@
+{
+  "title": "Tech Giant 'DataSecure' Faces Lawsuit Over 2024 Breach",
+  "author": "Emily Roberts",
+  "date": "May 18, 2025",
+  "content": {
+    "intro": "DataSecure, a cloud storage provider, is facing a $12 million lawsuit after a 2024 cyberattack exposed millions of users' private files.",
+    "sections": [
+      {
+        "title": "Scope of the Breach",
+        "content": "Hackers exploited a vulnerability in DataSecure’s encryption system, gaining access to sensitive documents, photos, and financial records of over 3 million users."
+      },
+      {
+        "title": "Proposed Settlement Terms",
+        "content": "The company has agreed to pay affected users between $250 and $5,000, depending on the severity of damages. Business clients may receive higher compensation."
+      },
+      {
+        "title": "Security Upgrades",
+        "content": "As part of the settlement, DataSecure must implement stronger encryption and multi-factor authentication (MFA) across all platforms."
+      }
+    ]
+  }
+}

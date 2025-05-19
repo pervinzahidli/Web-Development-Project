@@ -1,0 +1,22 @@
+{
+  "title": "Health Insurance Provider 'MediGuard' Settles Data Leak Case for $8.2M",
+  "author": "Sarah Johnson",
+  "date": "May 17, 2025",
+  "content": {
+    "intro": "MediGuard, a leading health insurance company, has reached an $8.2 million settlement after a 2023 leak exposed patients' medical and financial records.",
+    "sections": [
+      {
+        "title": "What Data Was Exposed?",
+        "content": "The breach included medical histories, insurance IDs, billing details, and even some patients’ prescription records."
+      },
+      {
+        "title": "Compensation Details",
+        "content": "Affected individuals can claim up to $3,000 for out-of-pocket losses (such as fraudulent medical bills) and an additional $150 for general damages."
+      },
+      {
+        "title": "New Security Measures",
+        "content": "MediGuard will now conduct annual third-party security audits and provide free identity theft protection for five years."
+      }
+    ]
+  }
+}
