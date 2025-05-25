@@ -14,12 +14,12 @@ This blog was created with the goal of:
 
 ## 👥 Team Members
 
-| Name | GitHub |
-|------|--------|
-| A | [Zahidli Pervin](https://github.com/pervinzahidli) | create Main homepage (HTML, JavaScript, CSS) , create Admin page(HTML, JavaScript , CSS) , Create README.md file |
-| B | [Bunyadova Aytac](https://github.com/bunyadovaytac) | Adding information , Creating json files on the site  |
-| C | [Rustemov Rustem](https://github.com/Rustamov13) | create post section (HTML, JavaScript, CSS) , create admin-dashboard html file  |
-| D | [Alizade Ulvi](https://github.com/AlizadaUlvi) | create page1,page2,..,page6( HTML, JavaScript, CSS) , Creating json files on the site , localStorage function |
+| Name    | GitHub    | Responsibilities |
+|---|---|---|
+| A    | [Zahidli Pervin](https://github.com/pervinzahidli) | Create Main homepage (HTML, JavaScript, CSS), Create Admin page (HTML, JavaScript, CSS), Create README.md file |
+| B    | [Bunyadova Aytac](https://github.com/bunyadovaytac) | Adding information, Creating JSON files on the site |
+| C    | [Rustemov Rustem](https://github.com/Bustamov13) | Create post section (HTML, JavaScript, CSS), Create admin-dashboard HTML file |
+| D    | [Alizade Ulvi](https://github.com/AlizadaUlvi) | Create page1, page2, ..., page6 (HTML, JavaScript, CSS), Creating JSON files on the site, localStorage function |
 
 > Replace the names and GitHub URLs with your actual team member details.
 
