@@ -24,22 +24,62 @@ This blog was created with the goal of:
 > Replace the names and GitHub URLs with your actual team member details.
 
 ## 📁 Project Structure
-from folder_structure import FolderStructureGenerator
 
-# List of folders to be ignored in the folder structure generation
-folders_to_ignore = [
-    "__pycache__",
-    ".git",
-    ".idea",
-    "venv",
-]
+- 📄 admin-dashboard.html
+- 📄 admin-login.html
+- 📄 admin-script.js
+- 📄 admin-styles.css
+- 📂 **create post section**
+    - 📂 **images**
+        - 📄 header-bg.jpg
+    - 📄 index.html
+    - 📄 script.js
+    - 📄 style.css
+- 📄 directory-structure-generator.sh
+- 📄 index.html
+- 📂 **page 1**
+    - 📂 **data**
+        - 📄 news-data.json
+    - 📄 index.html
+    - 📄 script.js
+    - 📄 styles.css
+- 📂 **page 2**
+    - 📂 **data**
+        - 📄 news-data.json
+    - 📄 index.html
+    - 📄 script.js
+    - 📄 styles.css
+- 📂 **page 3**
+    - 📂 **data**
+        - 📄 news-data.json
+    - 📄 index.html
+    - 📄 script.js
+    - 📄 styles.css
+- 📂 **page 4**
+    - 📂 **data**
+        - 📄 news-data.json
+    - 📄 index.html
+    - 📄 script.js
+    - 📄 styles.css
+- 📂 **page 5**
+    - 📂 **data**
+        - 📄 news-data.json
+    - 📄 index.html
+    - 📄 script.js
+    - 📄 styles.css
+- 📂 **page 6**
+    - 📂 **data**
+        - 📄 news-data.json
+    - 📄 index.html
+    - 📄 script.js
+    - 📄 styles.css
+- 📂 **Photo**
+    - 📄 —Pngtree—blue business technology information security_1100472.jpg
+- 📄 README.md
+- 📄 script.js
+- 📄 styles.css
 
-# Generate the markdown representation of the folder structure
-folder_structure_generator = FolderStructureGenerator(ignored_folders=folders_to_ignore)
-folder_structure_md = folder_structure_generator.generate_folder_structure_md()
 
-# Print the markdown representation of the folder structure
-print(folder_structure_md)
 
 To run the project locally:
 
