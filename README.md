@@ -25,23 +25,27 @@ This blog was created with the goal of:
 
 ## 📁 Project Structure
 Web-Development-Project/
-├── idea/ # 'idea' folder
-├── photo/ # 'Photo' folder
-├── create-post-section/ # 'create post section' folder
-├── page1/ # Page 1 folder
-├── page2/ # Page 2 folder
-├── page3/ # Page 3 folder
-├── page4/ # Page 4 folder
-├── page5/ # Page 5 folder
-├── page6/ # Page 6 folder
-├── README.md
-├── admin-dashboard.html # Admin dashboard page
-├── admin-login.html # Admin login page
+│
+├── idea/ # Project idea documents
+├── photo/ # Image assets
+├── create-post-section/ # Post creation functionality
+│
+├── page1/ # Page 1
+├── page2/ # Page 2
+├── page3/ # Page 3
+├── page4/ # Page 4
+├── page5/ # Page 5
+├── page6/ # Page 6
+│
+├── admin-dashboard.html # Admin dashboard
+├── admin-login.html # Admin login
 ├── admin-script.js # Admin JavaScript
 ├── admin-styles.css # Admin CSS
+│
 ├── index.html # Main homepage
 ├── script.js # Main JavaScript
-└── styles.css # Main CSS
+├── styles.css # Main CSS
+└── README.md # Project documentation
 
 To run the project locally:
 
