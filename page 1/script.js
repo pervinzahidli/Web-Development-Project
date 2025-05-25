@@ -27,18 +27,33 @@ document.addEventListener('DOMContentLoaded', function() {
     loginForm.style.display = 'none';
     editArea.style.display = 'none';
     
-    // Load news data from JSON
+    // Load news data from JSON or localStorage
     let newsData = {};
     
-    fetch('data/news-data.json')
-        .then(response => response.json())
-        .then(data => {
-            newsData = data;
+    function loadNewsData() {
+        // Check if there's saved data in localStorage
+        const savedData = localStorage.getItem('savedNewsData');
+        
+        if (savedData) {
+            // Use the saved data if available
+            newsData = JSON.parse(savedData);
             updateNewsDisplay();
-        })
-        .catch(error => {
-            console.error('Error loading news data:', error);
-        });
+        } else {
+            // Otherwise, load from the JSON file
+            fetch('data/news-data.json')
+                .then(response => response.json())
+                .then(data => {
+                    newsData = data;
+                    updateNewsDisplay();
+                })
+                .catch(error => {
+                    console.error('Error loading news data:', error);
+                });
+        }
+    }
+    
+    // Initial load
+    loadNewsData();
     
     // Update the display with news data
     function updateNewsDisplay() {
@@ -88,9 +103,10 @@ document.addEventListener('DOMContentLoaded', function() {
             newsData = updatedData;
             updateNewsDisplay();
             
-            // In a real app, you would send this to a server to save the JSON file
-            // For now, we'll just update the in-memory data
-            console.log('News data updated (not saved to file in this demo)');
+            // Save the updated data to localStorage
+            localStorage.setItem('savedNewsData', JSON.stringify(newsData));
+            
+            console.log('News data updated and saved to localStorage');
             
             // Hide editor and show edit button
             editArea.style.display = 'none';
