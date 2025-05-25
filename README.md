@@ -24,28 +24,22 @@ This blog was created with the goal of:
 > Replace the names and GitHub URLs with your actual team member details.
 
 ## 📁 Project Structure
-Web-Development-Project/
-│
-├── idea/ # Project idea documents
-├── photo/ # Image assets
-├── create-post-section/ # Post creation functionality
-│
-├── page1/ # Page 1
-├── page2/ # Page 2
-├── page3/ # Page 3
-├── page4/ # Page 4
-├── page5/ # Page 5
-├── page6/ # Page 6
-│
-├── admin-dashboard.html # Admin dashboard
-├── admin-login.html # Admin login
-├── admin-script.js # Admin JavaScript
-├── admin-styles.css # Admin CSS
-│
-├── index.html # Main homepage
-├── script.js # Main JavaScript
-├── styles.css # Main CSS
-└── README.md # Project documentation
+from folder_structure import FolderStructureGenerator
+
+# List of folders to be ignored in the folder structure generation
+folders_to_ignore = [
+    "__pycache__",
+    ".git",
+    ".idea",
+    "venv",
+]
+
+# Generate the markdown representation of the folder structure
+folder_structure_generator = FolderStructureGenerator(ignored_folders=folders_to_ignore)
+folder_structure_md = folder_structure_generator.generate_folder_structure_md()
+
+# Print the markdown representation of the folder structure
+print(folder_structure_md)
 
 To run the project locally:
 
