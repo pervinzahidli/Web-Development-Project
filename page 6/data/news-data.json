@@ -1,0 +1,22 @@
+{
+  "title": "SocialConnect Settles Class Action Over Facial Recognition Misuse",
+  "author": "Lisa Chen",
+  "date": "May 15, 2025",
+  "content": {
+    "intro": "Social media giant SocialConnect has agreed to a $7 million settlement after unlawfully collecting and storing biometric data without user permission.",
+    "sections": [
+      {
+        "title": "What Was the Issue?",
+        "content": "The company used facial recognition technology to tag users in photos without their consent, violating Illinois’ Biometric Privacy Act."
+      },
+      {
+        "title": "Who Is Eligible?",
+        "content": "Illinois residents who used SocialConnect between **2018-2024** can file a claim for an estimated $200-$400 each."
+      },
+      {
+        "title": "Policy Changes",
+        "content": "SocialConnect must delete all unlawfully collected biometric data and introduce stricter privacy controls."
+      }
+    ]
+  }
+}
