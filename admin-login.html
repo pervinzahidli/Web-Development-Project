@@ -25,12 +25,11 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
             </div>
-
-            <!-- ✅ Doğru Site Key burada -->
+            <!-- CAPTCHA üçün əlavə hissə -->
             <div class="form-group">
-                <div class="g-recaptcha" data-sitekey="6LevnUkrAAAAAIZwpSPi4VTafVKAVzLYaSqMzuYA"></div>
+                <label id="captchaQuestion">Loading CAPTCHA...</label>
+                <input type="text" id="captchaAnswer" placeholder="Cavab" required>
             </div>
-
             <div class="form-group">
                 <button type="submit" id="loginBtn">Login</button>
             </div>
