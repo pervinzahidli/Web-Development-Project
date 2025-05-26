@@ -8,12 +8,30 @@ document.addEventListener('DOMContentLoaded', function () {
         password: "admin"
     };
 
+    let num1, num2, correctAnswer;
+
+    function generateCaptcha() {
+        num1 = Math.floor(Math.random() * 10) + 1;
+        num2 = Math.floor(Math.random() * 10) + 1;
+        correctAnswer = num1 + num2;
+        const captchaLabel = document.getElementById('captchaQuestion');
+        if (captchaLabel) {
+            captchaLabel.textContent = `CAPTCHA: ${num1} + ${num2} = ?`;
+        }
+    }
+
+    function validateCaptchaInput() {
+        const userAnswer = parseInt(document.getElementById('captchaAnswer').value, 10);
+        return userAnswer === correctAnswer;
+    }
+
+    generateCaptcha(); // İlk CAPTCHA yüklə
+
     loginForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
         const username = document.getElementById('username').value.trim();
         const password = document.getElementById('password').value;
-        const recaptchaResponse = grecaptcha.getResponse();
 
         errorMessage.textContent = '';
         loginBtn.disabled = true;
@@ -25,8 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            if (!recaptchaResponse) {
-                showError('Please complete the reCAPTCHA.');
+            if (!validateCaptchaInput()) {
+                showError('CAPTCHA səhvdir. Zəhmət olmasa yenidən cəhd edin.');
+                generateCaptcha();
                 return;
             }
 
@@ -56,18 +75,18 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = 'admin-dashboard.html';
         }, 1500);
     }
-});
 
-// Add shake animation
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes shake {
-        0%, 100% { transform: translateX(0); }
-        10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
-        20%, 40%, 60%, 80% { transform: translateX(5px); }
-    }
-    .shake {
-        animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
-    }
-`;
-document.head.appendChild(style);
+    // Add shake animation
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+        }
+        .shake {
+            animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+        }
+    `;
+    document.head.appendChild(style);
+});
