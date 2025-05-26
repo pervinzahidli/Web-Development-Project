@@ -16,8 +16,8 @@ This blog was created with the goal of:
 
 | Name    | GitHub    | Responsibilities |
 |---|---|---|
-| A    | [Zahidli Pervin](https://github.com/pervinzahidli) | Create Main homepage (HTML, JavaScript, CSS), Create Admin page (HTML, JavaScript, CSS), Create README.md file |
-| B    | [Bunyadova Aytac](https://github.com/bunyadovaytac) | Adding information, Creating JSON files on the site |
+| A    | [Zahidli Pervin](https://github.com/pervinzahidli) | Create Main homepage (HTML, JavaScript, CSS), Create Admin page (HTML, JavaScript ), Create README.md file , recaptcha function |
+| B    | [Bunyadova Aytac](https://github.com/bunyadovaytac) | Adding information, Creating JSON files on the site , Create Admin page (CSS )|
 | C    | [Rustemov Rustem](https://github.com/Rustamov13) | Create post section (HTML, JavaScript, CSS), Create admin-dashboard HTML file |
 | D    | [Alizade Ulvi](https://github.com/AlizadaUlvi) | Create page1, page2, ..., page6 (HTML, JavaScript, CSS), Creating JSON files on the site, localStorage function |
 
